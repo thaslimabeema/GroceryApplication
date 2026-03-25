@@ -25,7 +25,7 @@
       <span class="top-banner-title-font">Test results</span>
       <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
       <br/>
-      <span class="top-banner-font-1">1 suite, 1 failed test</span>
+      <span class="top-banner-font-1">1 suite</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -39,7 +39,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" panel-name="suite-Suite" class="navigator-link">
-              <span class="suite-name border-failed">Suite</span>
+              <span class="suite-name border-passed">Suite</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -50,7 +50,7 @@
               <ul>
                 <li>
                   <a href="#" panel-name="test-xml-Suite" class="navigator-link ">
-                    <span>C:\Users\thaslima\eclipse-workspace\GroceryApplication\testng.xml</span>
+                    <span>C:\Users\thaslima\git\GroceryApplication\GroceryApplication\testng.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -92,21 +92,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">2 methods, 1 failed,   1 passed</span>
-                  </li>
-                  <li>
-                    <span class="method-list-title failed">Failed methods</span>
-                    <span class="show-or-hide-methods failed">
-                      <a href="#" panel-name="suite-Suite" class="hide-methods failed suite-Suite"> (hide)</a> <!-- hide-methods failed suite-Suite -->
-                      <a href="#" panel-name="suite-Suite" class="show-methods failed suite-Suite"> (show)</a> <!-- show-methods failed suite-Suite -->
-                    </span>
-                    <div class="method-list-content failed suite-Suite">
-                      <span>
-                        <img src="failed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="testscript.LoginTest" class="method navigator-link" hash-for-method="verifyWhetherUserIsAbleToLoginWithInvalidUsernameAndValidPassword(admin123, 123)">verifyWhetherUserIsAbleToLoginWithInvalidUsernameAndValidPassword(admin123, 123)</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                    </div> <!-- method-list-content failed suite-Suite -->
+                    <span class="method-stats">1 method,   1 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -117,7 +103,7 @@
                     <div class="method-list-content passed suite-Suite">
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="testscript.LoginTest" class="method navigator-link" hash-for-method="verifyWhetherUserIsAbleToLoginWithInvalidUsernameAndValidPassword(admin, admin22)">verifyWhetherUserIsAbleToLoginWithInvalidUsernameAndValidPassword(admin, admin22)</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Suite" title="testscript.LoginTest" class="method navigator-link" hash-for-method="verifyWhetherUserIsAbleToLoginWithValidCredentials">verifyWhetherUserIsAbleToLoginWithValidCredentials</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-Suite -->
@@ -132,50 +118,6 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-Suite" class="panel Suite">
-          <div class="suite-Suite-class-failed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="failed.png"/>
-              <span class="class-name">testscript.LoginTest</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="verifyWhetherUserIsAbleToLoginWithInvalidUsernameAndValidPassword(admin123, 123)">
-                  </a> <!-- verifyWhetherUserIsAbleToLoginWithInvalidUsernameAndValidPassword(admin123, 123) -->
-                  <span class="method-name">verifyWhetherUserIsAbleToLoginWithInvalidUsernameAndValidPassword</span>
-                  <span class="parameters">(admin123,123)</span>
-                  <div class="stack-trace">org.openqa.selenium.StaleElementReferenceException: stale element reference: stale element not found
-  (Session info: chrome=146.0.7680.75)
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#stale-element-reference-exception
-Build info: version: &apos;4.27.0&apos;, revision: &apos;d6e718d134&apos;
-System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;x86&apos;, os.version: &apos;10.0&apos;, java.version: &apos;11.0.19&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [d726c4f6dd5a5d59d92a187382a0388e, getElementText {id=f.6E0A2B9F34957F7F2934001E95A98EBF.d.B67691440ED07158B09A2AAF1535CD55.e.20}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 146.0.7680.75, chrome: {chromedriverVersion: 146.0.7680.80 (f08938029c88..., userDataDir: C:\Users\thaslima\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:55211}, goog:processID: 22964, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:55211/devtoo..., se:cdpVersion: 146.0.7680.75, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on windows (d726c4f6dd5a5d59d92a187382a0388e)] -&gt; xpath: //b[text()=&apos;7rmart supermarket&apos;]]
-Session ID: d726c4f6dd5a5d59d92a187382a0388e
-	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
-	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
-	at org.openqa.selenium.remote.RemoteWebElement.getText(RemoteWebElement.java:191)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
-	at com.sun.proxy.$Proxy16.getText(Unknown Source)
-	at pages.LoginPage.isTextDisplayed(LoginPage.java:45)
-	at testscript.LoginTest.verifyWhetherUserIsAbleToLoginWithInvalidUsernameAndValidPassword(LoginTest.java:65)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
-... Removed 35 stack frames
-</div> <!-- stack-trace -->
-                  <em>
-(User is trying to login with invalid username and invalid password)                  </em>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Suite-class-failed -->
           <div class="suite-Suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
@@ -184,12 +126,11 @@ Session ID: d726c4f6dd5a5d59d92a187382a0388e
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="verifyWhetherUserIsAbleToLoginWithInvalidUsernameAndValidPassword(admin, admin22)">
-                  </a> <!-- verifyWhetherUserIsAbleToLoginWithInvalidUsernameAndValidPassword(admin, admin22) -->
-                  <span class="method-name">verifyWhetherUserIsAbleToLoginWithInvalidUsernameAndValidPassword</span>
-                  <span class="parameters">(admin,admin22)</span>
+                  <a name="verifyWhetherUserIsAbleToLoginWithValidCredentials">
+                  </a> <!-- verifyWhetherUserIsAbleToLoginWithValidCredentials -->
+                  <span class="method-name">verifyWhetherUserIsAbleToLoginWithValidCredentials</span>
                   <em>
-(User is trying to login with invalid username and invalid password)                  </em>
+(User is trying to login with valid credentials)                  </em>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -197,7 +138,7 @@ Session ID: d726c4f6dd5a5d59d92a187382a0388e
         </div> <!-- panel Suite -->
         <div panel-name="test-xml-Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">C:\Users\thaslima\eclipse-workspace\GroceryApplication\testng.xml</span>
+            <span class="header-content">C:\Users\thaslima\git\GroceryApplication\GroceryApplication\testng.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
@@ -212,7 +153,7 @@ Session ID: d726c4f6dd5a5d59d92a187382a0388e
     &lt;classes&gt;
       &lt;class name=&quot;testscript.LoginTest&quot;&gt;
         &lt;methods&gt;
-          &lt;include name=&quot;verifyWhetherUserIsAbleToLoginWithInvalidUsernameAndValidPassword&quot;/&gt;
+          &lt;include name=&quot;verifyWhetherUserIsAbleToLoginWithValidCredentials&quot;/&gt;
         &lt;/methods&gt;
       &lt;/class&gt; &lt;!-- testscript.LoginTest --&gt;
     &lt;/classes&gt;
@@ -242,7 +183,7 @@ Session ID: d726c4f6dd5a5d59d92a187382a0388e
               <span class="test-group-name">smoke</span>
               <br/>
               <div class="method-in-group">
-                <span class="method-in-group-name">verifyWhetherUserIsAbleToLoginWithInvalidUsernameAndValidPassword</span>
+                <span class="method-in-group-name">verifyWhetherUserIsAbleToLoginWithValidCredentials</span>
                 <br/>
               </div> <!-- method-in-group -->
             </div> <!-- test-group -->
@@ -262,20 +203,16 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(2);
+data.addRows(1);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'verifyWhetherUserIsAbleToLoginWithInvalidUsernameAndValidPassword')
+data.setCell(0, 1, 'verifyWhetherUserIsAbleToLoginWithValidCredentials')
 data.setCell(0, 2, 'testscript.LoginTest')
-data.setCell(0, 3, 418);
-data.setCell(1, 0, 1)
-data.setCell(1, 1, 'verifyWhetherUserIsAbleToLoginWithInvalidUsernameAndValidPassword')
-data.setCell(1, 2, 'testscript.LoginTest')
-data.setCell(1, 3, 343);
+data.setCell(0, 3, 2587);
 window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 761 ms</span>
+              <span class="suite-total-time">Total running time: 2 seconds</span>
               <div id="times-div-Suite">
               </div> <!-- times-div-Suite -->
             </div> <!-- times-div -->
@@ -298,7 +235,7 @@ return data;
               <div class="ignored-methods-div">
                 <span class="ignored-method-name">verifyWhetherUserIsAbleToLoginWithValidUsernameAndInvalidPassword</span>
                 <br/>
-                <span class="ignored-method-name">verifyWhetherUserIsAbleToLoginWithValidCredentials</span>
+                <span class="ignored-method-name">verifyWhetherUserIsAbleToLoginWithInvalidUsernameAndValidPassword</span>
                 <br/>
                 <span class="ignored-method-name">verifyWhetherUserIsAbleToLoginWithInvalidCredentials</span>
                 <br/>
@@ -318,26 +255,12 @@ return data;
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
-                <span class="method-name">verifyWhetherUserIsAbleToLoginWithInvalidUsernameAndValidPassword(admin, admin22)</span>
-                <span class="method-start">3950 ms</span>
+                <span class="method-name">verifyWhetherUserIsAbleToLoginWithValidCredentials</span>
+                <span class="method-start">5070 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
-                <span class="method-name">closeBrowser([TestResult name=verifyWhetherUserIsAbleToLoginWithInvalidUsernameAndValidPassword status=SUCCESS me...)</span>
-                <span class="method-start">4375 ms</span>
-              </div> <!-- configuration-method after -->
-              <div class="configuration-method before">
-                <span class="method-name">inilializeBrowser(chrome)</span>
-                <span class="method-start">4378 ms</span>
-              </div> <!-- configuration-method before -->
-              <div class="test-method">
-                <img src="failed.png">
-                </img>
-                <span class="method-name">verifyWhetherUserIsAbleToLoginWithInvalidUsernameAndValidPassword(admin123, 123)</span>
-                <span class="method-start">7431 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-method after">
-                <span class="method-name">closeBrowser([TestResult name=verifyWhetherUserIsAbleToLoginWithInvalidUsernameAndValidPassword status=FAILURE me...)</span>
-                <span class="method-start">7784 ms</span>
+                <span class="method-name">closeBrowser([TestResult name=verifyWhetherUserIsAbleToLoginWithValidCredentials status=SUCCESS method=LoginTest....)</span>
+                <span class="method-start">7661 ms</span>
               </div> <!-- configuration-method after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

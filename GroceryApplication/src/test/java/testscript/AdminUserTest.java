@@ -18,7 +18,7 @@ public class AdminUserTest extends Base {
 	HomePage home;
 	AdminUserPage admin;
 	
-	@Test
+	@Test(description="user is trying to create new user")
 	public void verifyWhetheUserCanCreateNewUser() throws IOException
 	{
 		String usernameValue = ExcelUtilities.getStringData(0, 0, "LoginPage");
@@ -42,7 +42,7 @@ public class AdminUserTest extends Base {
 		
 	}
 	
-	@Test
+	@Test(description="user is trying to search new user")
 	public void verifyWhetheUserCanSearchAdminUser() throws IOException 
 	{
 		String usernameValue = ExcelUtilities.getStringData(0, 0, "LoginPage");

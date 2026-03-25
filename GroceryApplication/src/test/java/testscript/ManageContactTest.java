@@ -16,7 +16,7 @@ public class ManageContactTest extends Base {
 	HomePage home ;
 	ManageContactPage contact ;
 
-	@Test
+	@Test(description="user is trying to edit contact us detail")
 	public void verifyWhetherUserCanEditContactUsDetail() throws IOException {
 		String usernameValue = ExcelUtilities.getStringData(0, 0, "LoginPage");
 		String passwordValue = ExcelUtilities.getStringData(0, 1, "LoginPage");

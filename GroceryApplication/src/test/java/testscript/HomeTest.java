@@ -15,7 +15,7 @@ public class HomeTest extends Base {
 	HomePage home;
 	
 	
-	@Test
+	@Test(description="user is trying to logout")
 	public void verifyIfUserCanLogout() throws IOException
 	{
 		String usernameValue = ExcelUtilities.getStringData(0, 0, "LoginPage");
